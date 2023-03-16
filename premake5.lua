@@ -3,10 +3,6 @@ project "ImGui"
 	language "C++"
     staticruntime "off"
 
-<<<<<<< HEAD
-=======
-
->>>>>>> test
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
