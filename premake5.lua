@@ -1,7 +1,12 @@
 project "ImGui"
 	kind "StaticLib"
 	language "C++"
+<<<<<<< HEAD
     staticruntime "off"
+=======
+    cppdialect "C++17"
+    staticruntime "on"
+>>>>>>> 663a0782f21a74a8d08d3e4a8fd2048aa0b20afd
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
@@ -23,12 +28,19 @@ project "ImGui"
 
 	filter "system:windows"
 		systemversion "latest"
+<<<<<<< HEAD
 		cppdialect "C++17"
+=======
+>>>>>>> 663a0782f21a74a8d08d3e4a8fd2048aa0b20afd
 
 	filter "system:linux"
 		pic "On"
 		systemversion "latest"
+<<<<<<< HEAD
 		cppdialect "C++17"
+=======
+		
+>>>>>>> 663a0782f21a74a8d08d3e4a8fd2048aa0b20afd
 
 	filter "configurations:Debug"
 		runtime "Debug"
